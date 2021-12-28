@@ -7,6 +7,7 @@ header{
     width: 100%;
     color: #fefefe;
     border-bottom: solid 1px rgba(153, 153, 153, 0.5);
+    transition: 3s;
     .header{
         display: flex;
         position: relative;
@@ -22,9 +23,8 @@ header{
             top: 100%;
             opacity: 0;
             width: 100%;
-            height: 260%;
-            transition: 0.5s;
-            padding: 60rem 0 0 0;
+            height: 0%;
+            transition: 0.3s;
         }
         .logo{
             display: flex;
@@ -42,6 +42,7 @@ header{
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
+                // overflow: hidden;
         
                 &>li{
                     font-weight: 400;
@@ -53,12 +54,14 @@ header{
         
                     .nav_menu{
                         position: absolute;
+                        display: block;
                         opacity: 0;
-                        top: -300%;
+                        top: -200%;
                         left: 0;
+                        z-index: 10;
                         padding: 20rem 0;
                         text-align: left;
-                        transition: 0.5s;
+                        transition: 0.3s;
                         &>li{
                             padding: 10rem 0;
                             font-size: 14rem;
@@ -115,6 +118,9 @@ header{
                             text-align: center;
                             width: 55%;
                         }
+                        input::placeholder{
+                            color: #bbb;
+                        }
                         input[type=text]:focus{
                             color: #bbb;
                             outline: none;
@@ -146,13 +152,15 @@ header{
     }
 }
 
+
+
 //fullpage 
 #fp-nav ul{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 10rem;
+    margin-right: 50rem;
 }
 #fp-nav ul li{
     display: flex;
@@ -160,7 +168,7 @@ header{
     justify-content: center;
     width: 100%;
     height: 100%; 
-    margin: 10rem 0;
+    margin: 15rem 0;
 }
 
 #fp-nav ul li a{
@@ -177,33 +185,103 @@ header{
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     background-color: rgba(255,255,255,0.4);
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
 
 }
 
 
-
-.main{
-    background-image: url("/img/main_2.jpg");
+#section_6{
+    .container{
+        // height: 100%;
+        // display: flex;
+        // .tittle{
+        //     width: 100%;
+        //     height: 25%;
+        //     p{}
+        //     h2{}
+        // }
+        // .cont6_sec{
+        //     width: 100%;
+        //     height: 75%;
+        //     background-color: aquamarine;
+        //     display: flex;
+        //     justify-content: center;
+        //     max-width: 1115px;
+        //     width: 100%;
+        //     li{
+        //         position: relative;
+        //         width: 10%;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //         a{
+        //             display: block;
+        //             width: 100%;
+        //             img{
+        //                 display: block;
+        //                 width: 100%;
+        //             }
+        //         }
+        //     }
+        // }
+        
+    }
 }
+//SNS icon
+// .sns_i{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-image: url(/img/ico_sns_instar.png);
+// }
+// .sns_n{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-image: url(/img/ico_sns_naver.png);
+// }
+// .sns_y{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-image: url(/img/ico_sns_youtube.png);
+// }
+
+
+
 .section_1{
-    background-image: url("/img/section_1.jpg");
+    // background-image: url("./img/main_2.jpg");
+    background-image: url("/img/main_1.png");
 }
 .section_2{
-    background-image: url("/img/section_2.jpg");
+    background-image: url("/img/sec_2.jpg");
 }
 .section_3{
-    background-image: url("/img/section_3.jpg");
+    background-image: url("/img/sec_3.jpg");
 }
 .section_4{
-    background-image: url("/img/section_4.jpg");
+    background-image: url("/img/sec_4.jpg");
 }
 .section_5{
-    background-image: url("/img/section_5_back.jpg");
+    background-image: url("/img/sec_5.jpg");
 }
 .section_6{
-    background-image: url("/img/section_6_top.jpg");
+    background-image: url("/img/sec_6_back.jpg");
+}
+.section_7{
+    background-image: url("/img/sec_7_top.jpg");
+}
+#footer{
+    height: 500px;
+}
+
+
+h2{
+    font-size: 200px;
 }
 
 

@@ -5,6 +5,7 @@ header {
   width: 100%;
   color: #fefefe;
   border-bottom: solid 1px rgba(153, 153, 153, 0.5);
+  transition: 3s;
 }
 header .header {
   display: flex;
@@ -21,9 +22,8 @@ header .header .navbar {
   top: 100%;
   opacity: 0;
   width: 100%;
-  height: 260%;
-  transition: 0.5s;
-  padding: 60rem 0 0 0;
+  height: 0%;
+  transition: 0.3s;
 }
 header .header .logo {
   display: flex;
@@ -52,12 +52,14 @@ header .header nav .nav > li p {
 }
 header .header nav .nav > li .nav_menu {
   position: absolute;
+  display: block;
   opacity: 0;
-  top: -300%;
+  top: -200%;
   left: 0;
+  z-index: 10;
   padding: 20rem 0;
   text-align: left;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 header .header nav .nav > li .nav_menu > li {
   padding: 10rem 0;
@@ -110,6 +112,9 @@ header article:first-of-type ul li:last-of-type input {
   text-align: center;
   width: 55%;
 }
+header article:first-of-type ul li:last-of-type input::placeholder {
+  color: #bbb;
+}
 header article:first-of-type ul li:last-of-type input[type=text]:focus {
   color: #bbb;
   outline: none;
@@ -136,7 +141,7 @@ header article:last-of-type ul li:nth-of-type(2) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-right: 10rem;
+  margin-right: 50rem;
 }
 
 #fp-nav ul li {
@@ -145,7 +150,7 @@ header article:last-of-type ul li:nth-of-type(2) {
   justify-content: center;
   width: 100%;
   height: 100%;
-  margin: 10rem 0;
+  margin: 15rem 0;
 }
 
 #fp-nav ul li a {
@@ -164,34 +169,42 @@ header article:last-of-type ul li:nth-of-type(2) {
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background-color: rgba(255, 255, 255, 0.4);
-  width: 10px;
-  height: 10px;
-}
-
-.main {
-  background-image: url("/img/main_2.jpg");
+  width: 7px;
+  height: 7px;
 }
 
 .section_1 {
-  background-image: url("/img/section_1.jpg");
+  background-image: url("/img/main_1.png");
 }
 
 .section_2 {
-  background-image: url("/img/section_2.jpg");
+  background-image: url("/img/sec_2.jpg");
 }
 
 .section_3 {
-  background-image: url("/img/section_3.jpg");
+  background-image: url("/img/sec_3.jpg");
 }
 
 .section_4 {
-  background-image: url("/img/section_4.jpg");
+  background-image: url("/img/sec_4.jpg");
 }
 
 .section_5 {
-  background-image: url("/img/section_5_back.jpg");
+  background-image: url("/img/sec_5.jpg");
 }
 
 .section_6 {
-  background-image: url("/img/section_6_top.jpg");
+  background-image: url("/img/sec_6_back.jpg");
+}
+
+.section_7 {
+  background-image: url("/img/sec_7_top.jpg");
+}
+
+#footer {
+  height: 500px;
+}
+
+h2 {
+  font-size: 200px;
 }
