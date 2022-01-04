@@ -374,8 +374,18 @@ header{
     height: 500px;
 }
 
+
 .fp-viewing-section2 h2{
-    font-size: 200px;
+    transition: all 0.3s;
+    font-size: 100px;
     color: #f00;
+}
+.num_animation{
+    font-size: 100px;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    border: solid 5px #fefefe;
+    text-align: center;
 }
 
