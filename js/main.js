@@ -30,19 +30,24 @@
 
 
       // onSlideLeave: function( section2, index, slideAnchor, slideIndex ){
-      onSlideLeave: function( section2 ){
-        console.log(section);
+      // afterSlideLoad: function( section2 ){
+      afterLoad: function( anchorLink, index ){
+        if (index == 2) {
+          // alert("제발되라고");
+          var sec2_Num = document.querySelector('.num_animation');
+          var targetnum = sec2_Num.getAttribute('data-rate');
+          var aniNum = 0;
+          var aniTimer = setInterval(function(){
+            ++aniNum;
+            sec2_Num.innerText = aniNum;
+            if(aniNum == targetnum){
+              clearInterval(aniTimer);
+            }4
+          },8);
+        }
+        // console.log(section);
 
-        var sec2_Num = document.querySelector('.num_animation');
-        var targetnum = sec2_Num.getAttribute('data-rate');
-        var aniNum = 0;
-        var aniTimer = setInterval(function(){
-          ++aniNum;
-          sec2_Num.innerText = aniNum;
-          if(aniNum == targetnum){
-            clearInterval(aniTimer);
-          }
-        },8);
+        
 
       }
 

@@ -509,7 +509,7 @@ header article:last-of-type ul li:nth-of-type(2) {
   font-size: 100px;
   padding: 20px;
   width: 300px;
-  margin: 0 auto;
+  margin: 200px auto;
   border: solid 5px #fefefe;
   text-align: center;
 }
