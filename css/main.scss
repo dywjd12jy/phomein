@@ -375,17 +375,18 @@ header{
 }
 
 
-.fp-viewing-section2 h2{
-    transition: all 0.3s;
-    font-size: 100px;
-    color: #f00;
-}
-.num_animation{
+.fp-viewing-section2{}
+.num_box{
+    display: flex;
+    justify-content: center;
     font-size: 100px;
     padding: 20px;
-    width: 300px;
+    width: 800px;
     margin: 200px auto;
     border: solid 5px #fefefe;
     text-align: center;
+    .num_animation{
+    }
 }
+
 

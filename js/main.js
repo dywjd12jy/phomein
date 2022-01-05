@@ -29,27 +29,96 @@
       bigSectionsDestination: top,
 
 
-      // onSlideLeave: function( section2, index, slideAnchor, slideIndex ){
-      // afterSlideLoad: function( section2 ){
+      //section2 카운트 number
+      // afterLoad: function( anchorLink, index ){
+      //   if (index == 2) {
+      //     var sec2_Num = document.querySelector('.num_animation');
+      //     var targetnum = sec2_Num.getAttribute('data-rate');
+
+      //     var aniNum = 10056300;
+      //     var increaseNum = 100;
+
+      //     var aniTimer = setInterval(function(){
+      //       for (var i = 0; i < targetnum; i + increaseNum){
+      //         // increaseNum + aniNum;
+      //         i + aniNum;
+      //       }
+      //       sec2_Num.innerText = aniNum;
+      //       if(aniNum == targetnum){
+      //         clearInterval(aniTimer);
+      //       }
+      //     },30);
+      //   }
+      // }
+
+
       afterLoad: function( anchorLink, index ){
         if (index == 2) {
-          // alert("제발되라고");
           var sec2_Num = document.querySelector('.num_animation');
           var targetnum = sec2_Num.getAttribute('data-rate');
           var aniNum = 0;
+          var aniNumPlus = 1960359;
+
           var aniTimer = setInterval(function(){
-            ++aniNum;
-            sec2_Num.innerText = aniNum;
-            if(aniNum == targetnum){
-              clearInterval(aniTimer);
-            }4
-          },8);
+              aniNum = aniNumPlus+aniNum;
+              sec2_Num.innerText = aniNum.toLocaleString('ko-KR');
+              if(aniNum == targetnum){
+                clearInterval(aniTimer);
+              }
+          },50); 
         }
-        // console.log(section);
-
-        
-
       }
+      // afterLoad: function( anchorLink, index ){
+      //   if (index == 2) {
+      //     var sec2_Num = document.querySelector('.num_animation');
+      //     var targetnum = sec2_Num.getAttribute('data-rate');
+      //     var aniNum = 0;
+      //     var aniNumPlus = 7841436;
+      //     // var aniStop = 39207180;
+      //     // var aniM = 5050;
+
+      //     var aniTimer = setInterval(function(){
+      //       // if(aniNum <= targetnum){
+      //         aniNum = aniNumPlus+aniNum;
+      //         // sec2_Num.innerText = aniNum;
+      //         sec2_Num.innerText = aniNum.toLocaleString('ko-KR');
+      //         if(aniNum == targetnum){
+      //           clearInterval(aniTimer);
+      //         }
+      //       // }
+      //     },10);
+      //   }
+      // }
+
+
+      // afterLoad: function( anchorLink, index ){
+      //   if (index == 2) {
+      //     var sec2_Num = document.querySelectorAll('.num_animation');
+
+      //     function changeNum(idx){
+
+      //       var aniNum = 0;
+      //       var targetNum = sec2_Num[idx].getAttribute('data-rate');
+
+      //       if(targetNum < 100){
+      //         intervalTime = 0.0000000001;
+      //       }
+
+      //       var aniTimer = setInterval(function(){
+      //         ++aniNum;
+      //         sec2_Num[idx].innerText = aniNum+(',');
+      //         if(aniNum == targetNum){
+      //             clearInterval(aniTimer);
+      //           }
+      //       },intervalTime);
+      //     }
+
+      //     for(var i = 0; i < sec2_Num.length; i++){
+      //       changeNum(i);
+      //     }
+
+      //   }
+      // }
 
     });
 

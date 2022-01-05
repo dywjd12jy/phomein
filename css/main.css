@@ -498,17 +498,16 @@ header article:last-of-type ul li:nth-of-type(2) {
   height: 500px;
 }
 
-.fp-viewing-section2 h2 {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  font-size: 100px;
-  color: #f00;
-}
-
-.num_animation {
+.num_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 100px;
   padding: 20px;
-  width: 300px;
+  width: 800px;
   margin: 200px auto;
   border: solid 5px #fefefe;
   text-align: center;
