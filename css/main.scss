@@ -190,6 +190,192 @@ header{
 
 }
 
+// section_2
+
+.section_2{
+
+    .animate{
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        transition-timing-function: all 1s ease-in-out;
+        transition-property: left, opacity ;
+        transition-duration: 1s, 2.5s;
+    }
+
+    .container{
+        max-width: 1100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .sec2_text{
+        width: 100%;
+        margin-top: 300rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        ul{
+            width: 100%;
+        }
+    }
+
+
+    // sec2_text > ul.....
+    .label{
+        display: flex;
+        li{
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 55rem;
+            position: relative;
+            font-size: 17rem;
+            text-align: center;
+        }
+
+        .animate{
+            left: 20%;
+            padding: 13rem 20rem;
+            background-color: #000000;
+            color: rgba(255,255,255,0.87);
+        }
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .title_num{
+        padding: 0;
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        height: 10vh;
+        margin-top: 20rem;
+        p{
+            overflow: hidden;
+            position: relative;
+            flex-basis: 50%;
+            height: 100%;
+        }
+
+        .num_animation{
+            height: 100%;
+            flex-basis: 50%;
+            line-height: 80rem;
+            font-size: 80rem;
+            letter-spacing: 6rem;
+        }
+
+        .animate{
+            left: 38%;
+            height: 100%;
+            font-size: 40rem;
+            line-height: 50rem;
+        }
+
+    }
+    .title_icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        margin-top: -20rem;
+        width: 50%;
+        p{
+            font-size: 20rem;
+            color: rgba(255,255,255,0.4);
+        }
+        .num_icon{
+            width: 100%;
+            margin-top: 5rem;
+            img{
+                width: 8%;
+            }
+        }
+    }
+}
+
+.section_3{
+    .container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        li{
+            text-align: center;
+        }
+        img{
+            width: 50px;
+        }
+    }
+
+    .title{
+        li{
+            p{
+                font-size: 65rem;
+                font-weight: 400;
+            }
+            span{
+                font-size: 75rem;
+                font-weight: 600;
+            }
+            button{
+                padding: 15rem 30rem;
+                background-color: #fff;
+                a{
+                    color: #333;
+                    font-weight: 400;
+                    font-size: 20rem;
+                }
+            }
+            &:last-of-type{
+                color: rgba(255,255,255,0.5);
+                font-size: 15rem;
+                padding: 30rem 50rem;
+            }
+        }
+
+    }
+    .box_bg{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(0,0,0,1);
+        z-index: 0;
+        // background-color: rgba(0,0,0,0.3);
+    }
+
+}
+
+//section scroll 했을때
+.fp-viewing-section2{
+    .label{
+        .animate{
+            left: 0;
+            opacity: 1;
+        }
+    }
+    .title_num{
+        .animate{
+            left: 0;
+            opacity: 1;
+        }
+    }
+}
+
 
 .section_6{
     .container{
@@ -375,18 +561,5 @@ header{
 }
 
 
-.fp-viewing-section2{}
-.num_box{
-    display: flex;
-    justify-content: center;
-    font-size: 100px;
-    padding: 20px;
-    width: 800px;
-    margin: 200px auto;
-    border: solid 5px #fefefe;
-    text-align: center;
-    .num_animation{
-    }
-}
 
 

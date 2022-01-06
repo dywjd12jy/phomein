@@ -52,7 +52,7 @@
       // }
 
 
-      afterLoad: function( anchorLink, index ){
+      onLeave: function( anchorLink, index ){
         if (index == 2) {
           var sec2_Num = document.querySelector('.num_animation');
           var targetnum = sec2_Num.getAttribute('data-rate');
