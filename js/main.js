@@ -54,7 +54,7 @@
 
       onLeave: function( anchorLink, index ){
         if (index == 2) {
-          var sec2_Num = document.querySelector('.num_animation');
+          var sec2_Num = document.querySelector('.num2_ani');
           var targetnum = sec2_Num.getAttribute('data-rate');
           var aniNum = 0;
           var aniNumPlus = 1960359;
@@ -66,6 +66,19 @@
                 clearInterval(aniTimer);
               }
           },50); 
+        }
+        if (index == 3) {
+          var sec3_Num = document.querySelector('.num3_ani');
+          var targetnum = sec3_Num.getAttribute('data-rate');
+          var aniNum = 0;
+
+          var aniTimer = setInterval(function(){
+              ++aniNum;
+              sec3_Num.innerText = aniNum;
+              if(aniNum == targetnum){
+                clearInterval(aniTimer);
+              }
+          },100);
         }
       }
       // afterLoad: function( anchorLink, index ){
