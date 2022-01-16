@@ -989,6 +989,114 @@ header{
     }
 }
 
+//footer
+footer{
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    .ft_tp_bar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 70rem;
+        border-bottom: solid 1px rgba(0,0,0,0.1);
+    }
+    .container{
+        position: relative;
+        .foot_tp{
+            width: 100%;
+            height: 70rem;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            ul{
+                display: flex;
+                li{
+                    color: #333;
+                    font-size: 16rem;
+                }
+                .color{
+                    color: #333;
+                }
+
+                &:first-of-type{
+                    width: 50%;
+                    li{
+                        color: #666;
+                        padding-right: 25rem;
+                    }
+                }
+                &:nth-of-type(2){
+                    width: 50%;
+                    li::after{
+                        content: "•";
+                        color: #546220;
+                        padding: 0 10rem;
+                    }
+                    li:last-child{
+                        color: #4F5B22;
+                    }
+                    li:last-child::after{
+                        content: none;
+                    }
+                }
+            }
+        }
+        .foot_bt{
+            padding: 40rem 0 70rem 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .ft_bt_left{
+                width: 70%;
+                p{
+                    color: #999;
+                }
+                h2{
+                    width: 20%;
+                    margin-bottom: 15rem;
+                }
+                ul{
+                    li{
+                        display: flex;
+                        p{
+                            font-size: 14rem;
+                            &:first-of-type::after{
+                                content: "ㅣ";
+                                padding: 0 10rem;
+                            }
+                            
+                        }
+                    }
+                }
+                &>p{
+                    padding-top: 20rem;
+                }
+            }
+            .ft_bt_right{
+                width: 30%;
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    width: 25%;
+                }
+                ul{
+                    padding-right: 30rem;
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        width: 23rem;
+                        padding-left: 20rem;
+                        img{}
+                    }
+                }
+            }
+        }
+    }
+}
+
 //section scroll 했을때
 .fp-viewing-section2{
     .label{
@@ -1145,7 +1253,7 @@ header{
     background-image: url("/img/sec_7_top.jpg");
 }
 #footer{
-    height: 500px;
+    // height: 500px;
 }
 
 
