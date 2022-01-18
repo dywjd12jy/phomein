@@ -30,28 +30,6 @@
 
 
       //section2 카운트 number
-      // afterLoad: function( anchorLink, index ){
-      //   if (index == 2) {
-      //     var sec2_Num = document.querySelector('.num_animation');
-      //     var targetnum = sec2_Num.getAttribute('data-rate');
-
-      //     var aniNum = 10056300;
-      //     var increaseNum = 100;
-
-      //     var aniTimer = setInterval(function(){
-      //       for (var i = 0; i < targetnum; i + increaseNum){
-      //         // increaseNum + aniNum;
-      //         i + aniNum;
-      //       }
-      //       sec2_Num.innerText = aniNum;
-      //       if(aniNum == targetnum){
-      //         clearInterval(aniTimer);
-      //       }
-      //     },30);
-      //   }
-      // }
-
-
       onLeave: function( anchorLink, index ){
         if (index == 2) {
           var sec2_Num = document.querySelector('.num2_ani');
@@ -135,31 +113,91 @@
 
     });
 
- 
-    // $(window).scroll(function(){
-    //   var threshold = $('.section_2').offset().top - 300;
-    //   // console.log(threshold);
-    //   if($(window).scrollTop() >= threshold){
-    //     var progressRate = $('.animate').attr('data-rate');
-    //     $({percent: 0}).animate({percent:progressRate},{
-    //       duration:1500,
-    //       progress:function(){
-    //         var now = this.percent;
-    //         console.log(now);
-    //       }
-    //     })
-    //   }
 
 
+    //slick_slider
+    $('.main_slider').slick({
+      autoplay: true,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      prevArrow: false,
+      nextArrow: false,
+      dots: true,
+      // appendDots: $('.item_list'),
+      appendDots: $('.dot_list'),
+
+
+      customPaging: function(slider, i) { 
+        console.log($(slider.$slides[i]).html());
+        // console.log(slider.$slides[i].data('title'));
+        // console.log($(slider.$slides[i]).data('title'));
+        return '<button class="tab">' + $(slider.$slides[i]).find('.slide_list').data('title')+$(slider.$slides[i]).data('text')+'</button>';
+        
+      },
+
+      //slick_dots
+      // customPaging: function(slider, i) { 
+        
+        // console.log($(slider.$slides[i]).html());
+        // return '<button class="tab">' + $(slider.$slides[i]).find('.sl_dot').attr('data-title') + '</button>';
+        
+        
+        // return '<button class="tab">' + itemList_i.find('.item').attr('data-dot-title') + '</button>';
+        // return '<button class="button">' + $(slider.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
+        // return '<button class="button">' + $(item_list.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
+        // return '<button class="button">' + $(item_list.$slides[i]).find('.item').dataset('data-dot-title') + '</button>';
+        // console.log($(slick_slider.$slides[i]).html());
+        // console.log(data-dot-title)
+        
+      //   console.log($(slider.$slides[i]).html());
+      //       return '<button class="tab">' + $(slider.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
+      // }
+
+      // customPaging: function(slider, i) { 
+        // return '<button class="tab">' + $(slider.$slides[i]).attr('data-title') + '<i class="fa fa-sort-asc"></i></button>';
+        //undefined 로 나옴
+        //i태그는 폰트어썸이였다..
+        // return '<button class="tab">' + $(slider.$slides[i]).text("aaaaaa") + '<i class="fa fa-sort-asc"></i></button>';
+        //그냥 오류남
+      // },
+      // customPaging: function(dot_list, i) { 
+      //   return '<button class="tab">' + $(dot_list.$slides[i]).attr('data-title') + '<i class="fa fa-sort-asc"></i></button>';
+      // },
+      // customPaging: function(slider, i) { 
+      //   console.log($(slider.$slides[i]).html());
+      //   return '<button class="tab">' + $(slider.$slides[i]).attr('data-title') + '</button>';
+        
+      // },
+
+        
+    });
+
+
+
+
+    // $('.slick_slide_dots').slick({
+    //   dots: true,
+    //   customPaging: function(item, i) { 
+    //       console.log($(item.$slides[i]).html());
+    //       return '<button class="tab">' + $(item.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
+    //     },
+    //   prevArrow: false,
+    //   nextArrow: false
     // });
 
+
+
+
+    // $('.slick_slide_dots').slick({
+    //   dots:true,
+    //   customPaging: function(slider, i) { 
+    //       console.log($(slider.$slides[i]).html());
+    //       return '<button class="tab">' + $(slider.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
+    //     },
+    // });
+
+
+
   });
-
-
-  // function scrollEvent(){
-  //   if (jQuery("body").hasClass("acacactive") == true ){
-  //     else{
-
-  //     }
-  //   }
-  // };

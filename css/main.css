@@ -1,8 +1,7 @@
 @charset "UTF-8";
 header {
-  position: fixed;
+  display: none;
   z-index: 10;
-  display: block;
   width: 100%;
   color: #fefefe;
   border-bottom: solid 1px rgba(153, 153, 153, 0.5);
@@ -259,6 +258,91 @@ header article:last-of-type ul li:nth-of-type(2) {
   background-color: rgba(255, 255, 255, 0.4);
   width: 7px;
   height: 7px;
+}
+
+.section_1 .main_slider {
+  background-color: burlywood;
+}
+
+.section_1 .main_slider .slide_list {
+  width: 100%;
+  height: 100vh;
+}
+
+.section_1 .main_slider .list_1 {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section_1 .main_slider .list_2 {
+  background: url(/img/main_2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section_1 .main_slider .list_3 {
+  background: url(/img/main_3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section_1 .main_slider .list_4 {
+  background: url(/img/main_4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section_1 .main_slider .list_5 {
+  background: url(/img/main_5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section_1 .slick-dots li {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  text-indent: -9999px;
+  white-space: nowrap;
+  border: 0;
+  width: 144px;
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: chartreuse;
+}
+
+.section_1 .slick-dots li button {
+  display: block;
+  width: 100%;
+  height: 20px;
+  border: 0;
+  font-size: 16px;
+  color: #e93030;
+  background-color: coral;
+  font-weight: 600;
+  text-align: center;
+  outline: none;
+  position: relative;
+}
+
+.section_1 .slick-dots li {
+  content: "aaaaaa";
+}
+
+.section_1 .dot_list {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 900px;
+  width: 100%;
+  background-color: brown;
 }
 
 .section_2 .animate {
@@ -1749,10 +1833,6 @@ footer .container .foot_bt .ft_bt_right ul li {
 
 .fp-viewing-section6 .section_6 .container .title .tit_box {
   top: 20%;
-}
-
-.section_1 {
-  background-image: url("/img/main_2.jpg");
 }
 
 .section_2 {
