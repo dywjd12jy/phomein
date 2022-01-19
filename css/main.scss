@@ -194,20 +194,99 @@ header{
 
 //section1
 .section_1{
-
     .main_slider{
-
-        // .slick-slide{
-        //     width: 100%;
-        //     height: 100%;
-            background-color: burlywood;
-        // }
         .slide_list{
             width: 100%;
             height: 100vh;
+            .main{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                max-width: 800px;
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+                text-align: center;
+                // background-color: blue;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 60%;
+                    // background-color: rgb(255, 102, 0);
+                    li{
+                        color: #fff;
+                    }
+                    .slide_li1_img{
+                        // background-color: rgb(146, 212, 80);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: flex-end;
+                        width: 30%;
+                        height: 20%;
+                        &::before{
+                            content: "";
+                            display: block;
+                            margin-bottom: 20rem;
+                            width: 1px;
+                            height: 55rem;
+                            background-color: #fff;
+                        }
+                    }
+                    .tit{
+                        position: relative;
+                        margin-bottom: 5rem;
+                        width: 100%;
+                        height: 50%;
+                        overflow: hidden;
+                        // background-color: chartreuse;
+                        .tit_box{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            top: 0;
+                            font-size: 30rem;
+                            p{
+                                opacity: 0.87;
+                                &:first-of-type{
+                                    font-size: 35rem;
+                                }
+                            }
+                            span{
+                                font-size: 80rem;
+                            }
+                        }
+                    }
+                    .tit_btn{
+                        width: 100%;
+                        height: 15%;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: center;
+                        padding-top: 25rem;
+                        // background-color: chartreuse;
+                        button{
+                            width: 180rem;
+                            height: 50rem;
+                            background-color: #8a382c;
+                            color: #fff;
+                            font-size: 15rem;
+                            padding: 15rem 25rem;
+                        }
+                    }
+
+                }
+            }
         }
         .list_1{
-            // background: url(/img/main_1.png); 
+            background: url(/img/main_1.png); 
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -236,79 +315,57 @@ header{
             background-repeat: no-repeat;
         }
     }
-    // .slick-dots{
-    //     position: absolute;
-    //     bottom: 10%;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     max-width: 900px;
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     background-color: aquamarine;
-    //     li{
-    //         button{
-    //             background-color: #f00;
-    //         }
-    //     }
-    // }
-    // .slick_slide_dots{
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     max-width: 900px;
-    //     width: 100%;
-    //     .item_list{
-    //         display: flex;
-    //         position: absolute;
-    //         background-color: blue;
-    //     }
-    // }
+    //dot
+    .dots{
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        height: 80rem;
+    }
     .slick-dots{
+        position: absolute;
+        bottom: 0%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 900px;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        transform: translateX(-50%);
         li{
             cursor: pointer;
             position: relative;
-            display: inline-block;
-            text-indent: -9999px;
+            // display: inline-block;
+            // text-indent: -9999px;
             white-space: nowrap; 
             border: 0;
-            width: 144px;
-            height: 40px;
-            margin-left: 5px;
-            margin-right: 5px;
-            // background-color: transparent;
-            // box-shadow: 0 0 0 0 rgba(82, 156, 219, 0);
-            background-color: chartreuse;
-            button{
-                display: block;
-                width: 100%;
-                height: 20px;
-                border: 0;
-                // background-color: transparent;
-                font-size: 16px;
-                color: #e93030;
-                background-color: coral;
-                font-weight: 600;
-                text-align: center;
-                outline: none;
-                position: relative; 
+            width: 20%;
+            height: 100%;
+            margin: 0;
+            button::before{
+                content: "";
+                background-color: #fff;
+                width: 80%;
+                height: 6rem;
+                opacity: 0.5;
+            }
+            button::after{
+
             }
         }
-        li{
-            content: "aaaaaa";
-
+        .p_style{
+            font-size: 15rem;
+            text-align: left;
+            line-height: 20rem;
+            color: #fefefe;
+            opacity: 0.5;
+            z-index: 20;
+            button{
+            }
         }
     }
-
-    .dot_list{
-        position: absolute;
-        bottom: 30%;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 900px;
-        width: 100%;
-        background-color: brown;
+    .slick-dotted.slick-slider{
+        margin-bottom: 0rem;
     }
 }
 // section_2

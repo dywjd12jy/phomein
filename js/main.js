@@ -117,7 +117,7 @@
 
     //slick_slider
     $('.main_slider').slick({
-      autoplay: true,
+      // autoplay: true,
       infinite: true,
       speed: 500,
       fade: true,
@@ -125,17 +125,17 @@
       prevArrow: false,
       nextArrow: false,
       dots: true,
-      // appendDots: $('.item_list'),
-      appendDots: $('.dot_list'),
+      appendDots: $('.dots'),
 
 
-      customPaging: function(slider, i) { 
-        console.log($(slider.$slides[i]).html());
+      // customPaging: function(slider, i) { 
+        // console.log($(slider.$slides[i]).html());
         // console.log(slider.$slides[i].data('title'));
         // console.log($(slider.$slides[i]).data('title'));
-        return '<button class="tab">' + $(slider.$slides[i]).find('.slide_list').data('title')+$(slider.$slides[i]).data('text')+'</button>';
+        // return '<button class="tab">' + $(slider.$slides[i]).find('.slide_list').data('title')+$(slider.$slides[i]).find('.slide_list').data('text')+'</button>';
         
-      },
+      // },
+
 
       //slick_dots
       // customPaging: function(slider, i) { 
@@ -150,54 +150,30 @@
         // return '<button class="button">' + $(item_list.$slides[i]).find('.item').dataset('data-dot-title') + '</button>';
         // console.log($(slick_slider.$slides[i]).html());
         // console.log(data-dot-title)
-        
-      //   console.log($(slider.$slides[i]).html());
-      //       return '<button class="tab">' + $(slider.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
-      // }
-
-      // customPaging: function(slider, i) { 
-        // return '<button class="tab">' + $(slider.$slides[i]).attr('data-title') + '<i class="fa fa-sort-asc"></i></button>';
-        //undefined 로 나옴
-        //i태그는 폰트어썸이였다..
-        // return '<button class="tab">' + $(slider.$slides[i]).text("aaaaaa") + '<i class="fa fa-sort-asc"></i></button>';
-        //그냥 오류남
-      // },
-      // customPaging: function(dot_list, i) { 
-      //   return '<button class="tab">' + $(dot_list.$slides[i]).attr('data-title') + '<i class="fa fa-sort-asc"></i></button>';
-      // },
-      // customPaging: function(slider, i) { 
-      //   console.log($(slider.$slides[i]).html());
-      //   return '<button class="tab">' + $(slider.$slides[i]).attr('data-title') + '</button>';
-        
-      // },
-
-        
+       
     });
 
+    var $dotText_1 = $('<p>쌀국수 창업의</br>새로운 패러다임</br>포메인 RED</p>');
+    var $dotText_2 = $('<p>쌀국수는</br>포메인</p>');
+    var $dotText_3 = $('<p>쌀 한 톨부터 다른</br>포메인다움</p>');
+    var $dotText_4 = $('<p>매일매일 까다로운</br>포메인다움</p>');
+    var $dotText_5 = $('<p>재료부터 건강한</br>포메인다움</p>');
+    $('.slick-dots li:first-of-type').append($dotText_1);
+    $('.slick-dots li:nth-of-type(2)').append($dotText_2);
+    $('.slick-dots li:nth-of-type(3)').append($dotText_3);
+    $('.slick-dots li:nth-of-type(4)').append($dotText_4);
+    $('.slick-dots li:last-of-type').append($dotText_5);
 
+    $('.slick-dots li p').addClass('p_style');
 
+    // var p = document.createElement('p');
+    // var text = document.createElement('text');
 
-    // $('.slick_slide_dots').slick({
-    //   dots: true,
-    //   customPaging: function(item, i) { 
-    //       console.log($(item.$slides[i]).html());
-    //       return '<button class="tab">' + $(item.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
-    //     },
-    //   prevArrow: false,
-    //   nextArrow: false
-    // });
+    
 
-
-
-
-    // $('.slick_slide_dots').slick({
-    //   dots:true,
-    //   customPaging: function(slider, i) { 
-    //       console.log($(slider.$slides[i]).html());
-    //       return '<button class="tab">' + $(slider.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
-    //     },
-    // });
-
-
-
+    // $('.slick-dots li').addClass('plus');
+    // $('plllus').append('.slick-dots li');
+    // console.log($('.plllus'));
+    // console.log($(".plllus").get());
+    // console.log($('.plus'));
   });
