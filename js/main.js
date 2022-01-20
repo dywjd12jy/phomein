@@ -166,6 +166,17 @@
 
     $('.slick-dots li p').addClass('p_style');
 
+
+
+
+    var dotIdx = $('.slick-dots>li').index(this);
+
+    $('.slick-dots li').click(function(){
+      $('.slick-list').addClass('sl_active');
+    });
+
+    
+
     // var p = document.createElement('p');
     // var text = document.createElement('text');
 
