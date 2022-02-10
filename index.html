@@ -25,7 +25,7 @@
 <body>
     <header>
         <div class="container">
-            <div class="header">
+            <div id="desktop" class="header">
                 <h1 class="logo"><img src="img/logo.png" alt="header_logo"></h1>
                 <nav>
                     <ul class="nav">
@@ -94,6 +94,80 @@
                     </ul>
                 </article>
             </div>
+            <div id="media" class="header">
+                <div class="head_bar">
+                    <h1 class="logo"><img src="img/logo.png" alt="header_logo"></h1>
+                    <ul>
+                        <li><a>가맹문의</a></li>
+                        <li>
+                            <p>KOREAN</p>
+                            <p>ㅣ</p>
+                            <p>ENGLISH</p>
+                        </li>
+                        <li class="ham">
+                            <span class="h_bar1"></span>
+                            <span class="h_bar2"></span>
+                            <span class="h_bar3"></span>
+                        </li>
+                    </ul>
+                </div>
+                <nav>
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="search">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </li>
+                    </ul>
+                    <ul class="nav">
+                        <!-- <div class="navbar"></div> -->
+                        <li><p>COMPANY</p>
+                            <ul class="nav_menu">
+                                <li>(주)데일리킹</li>
+                                <li>PHO SEASON INC.</li>
+                                <li>CEO 인사말</li>
+                                <li>현대그린푸드 MOU</li>
+                                <li>사회공헌활동</li>
+                            </ul>
+                        </li>
+                        <li><p>BRAND</p>
+                            <ul class="nav_menu">
+                                <li>포메인</li>
+                                <li>포메인 레드</li>
+                            </ul>
+                        </li>
+                        <li><p>MENU</p>
+                            <ul class="nav_menu">
+                                <li>메뉴</li>
+                                <li>국내유일 햅쌀면</li>
+                                <li>포메인 전용상품</li>
+                            </ul>
+                        </li>
+                        <li><p>STORE</p>
+                            <ul class="nav_menu">
+                                <li>매장찾기</li>
+                                <li>딜리버리 서비스</li>
+                            </ul>
+                        </li>
+                        <li><p>FRANCHISE</p>
+                            <ul class="nav_menu">
+                                <li>가맹 안내</li>
+                                <li>가맹 상담 신청</li>
+                                <li>교육시스템</li>
+                            </ul>
+                        </li>
+                        <li><p>COMMUNITY</p>
+                            <ul class="nav_menu">
+                                <li>인스타그램</li>
+                                <li>블로그</li>
+                                <li>유튜브</li>
+                                <li>공지 & 언론보도</li>
+                                <li>상품권</li>
+                                <li>멤버십</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <div id="fullpage">
@@ -129,8 +203,10 @@
                                 </div>
                             </li>
                             <li class="li_bt">
-                                <span class="span_tp"><p>갓 지은 햅쌀밥의 향</p><p>맑고 투명한 빛깔</p><p>부드럽고 쫀득한 식감</p></span>
-                                <span class="span_bt"><p>1년 365일 햅쌀로 직접 만들어 건강한 쌀국수면과 품질개선으로 더 깊어진 명품 육수까지 -</p><p>쌀국수는 포메인입니다.</p></span>
+                                <div class="libt_ap">
+                                    <span class="span_tp"><p>갓 지은 햅쌀밥의 향</p><p>맑고 투명한 빛깔</p><p>부드럽고 쫀득한 식감</p></span>
+                                    <span class="span_bt"><p>1년 365일 햅쌀로 직접 만들어 건강한 쌀국수면과 품질개선으로 더 깊어진 명품 육수까지 -</p><p>쌀국수는 포메인입니다.</p></span>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -138,27 +214,48 @@
                 <div class="slide_list list_3" data-title="cccccc" data-text="lalala">
                     <div class="main">
                         <ul class="main_tit">
-                            <li class="li_tp">쌀 한 톨부터 다른</li>
-                            <li class="tit">포메인다움</li>
-                            <li>햅쌀로 직접 만든 쌀국수면으로 깨끗하고 건강한 쌀국수를 선사합니다.</li>
+                            <li class="li_tp"></li>
+                            <li class="tit">
+                                <div class="tit_box">
+                                    <p>쌀 한 톨부터 다른</p>
+                                    <span>포메인다움</span>
+                                </div>
+                            </li>
+                            <li class="li_bt">
+                                <p>햅쌀로 직접 만든 쌀국수면으로 깨끗하고 건강한 쌀국수를 선사합니다.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="slide_list list_4" data-title="dddddd" data-text="lalala">
                     <div class="main">
                         <ul class="main_tit">
-                            <li class="li_tp">매일매일 까다로운</li>
-                            <li class="tit">포메인다움</li>
-                            <li>엄선한 9가지 상급 천연 향신료로 매일 매장에서 직접 끓여낸 명품 육수를 사용합니다.</li>
+                            <li class="li_tp"></li>
+                            <li class="tit">
+                                <div class="tit_box">
+                                    <p>매일매일 까다로운</p>
+                                    <span>포메인다움</span>
+                                </div>
+                            </li>
+                            <li class="li_bt">
+                                <p>엄선한 9가지 상급 천연 향신료로 매일 매장에서 직접 끓여낸 명품 육수를 사용합니다.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="slide_list list_5" data-title="eeeeee" data-text="lalala">
                     <div class="main">
                         <ul class="main_tit">
-                            <li class="li_tp">재료부터 건강한</li>
-                            <li class="tit">포메인다움</li>
-                            <li>위해 상품차단 시스템으로 안전하고 우수한 품질의 식자재를 공급 받습니다.</li>
+                            <li class="li_tp"></li>
+                            <li class="tit">
+                                <div class="tit_box">
+                                    <p>재료부터 건강한</p>
+                                    <span>포메인다움</span>
+                                </div>
+                            </li>
+                            <li class="li_bt">
+                                <p>위해 상품차단 시스템으로 안전하고 우수한 품질의 식자재를 공급 받습니다.</p>
+                            </li>
                         </ul>
                     </div>
                 </div>
