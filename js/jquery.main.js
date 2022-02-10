@@ -1,4 +1,4 @@
-
+    
 
 $(window).resize(function() { if($(window).width() > 1019) {
     var Header = $('.header')
@@ -27,12 +27,7 @@ $(window).resize(function() { if($(window).width() > 1019) {
     }); 
 } });
 $(window).resize(function() { if($(window).width() <= 1019) {
-    var Header = $('.header')
-    var NavBar = $('.navbar')
-    var Ham = $('.ham')
-    var Nav_Menu = $('.nav_menu')
-
-    Ham.on.toggle
+    
 
     // Nav.on("mouseover",function(){
         // Header.css('background-color','rgba(0,0,0,0.9)'),

@@ -174,7 +174,6 @@
     $('.slick-dots li').click(function(){
       $('.slick-list').addClass('sl_active');
     });
-
     
 
     // var p = document.createElement('p');
@@ -187,4 +186,32 @@
     // console.log($('.plllus'));
     // console.log($(".plllus").get());
     // console.log($('.plus'));
+
+    var Header = $('.header')
+    var NavBar = $('.navbar')
+    var Ham= $('.ham')
+    var Ham_bar= $('.ham p')
+    var Ham_Actv = $('.active')
+    var Nav = $('#nav')
+    var nav = $('.nav p')
+    var navMn = $('.nav_menu')
+
+    console.log(Ham_Actv);
+    
+    //ham 아이콘 클릭
+    Ham_bar.on("click", function(){
+      Nav.toggleClass('active')
+      Ham.toggleClass('active')
+      // Nav.toggle(),
+      // Ham.delay(5000).toggleClass('active');
+    });
+
+    //nav 메뉴 상하 슬라이드
+    nav.on("click", function(){
+      // e.preventDefault();
+      navMn.stop().slideUp();
+      $(this).siblings("ul").stop().slideToggle();
+      // return false;
+    });
+    
   });
