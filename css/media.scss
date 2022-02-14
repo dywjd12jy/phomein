@@ -239,30 +239,155 @@
 
 
 
-
 @media (min-width: 1500px){
   html {
     font-size: 6.25%;
   } 
+  .section_2{
+    .title_icon{
+      margin-top: -55rem;
+    }
+  }
+  .sec_3{
+    .tp_box{
+      height: 60%;
+      .title{
+        li{
+          &:nth-of-type(2){
+            button{
+              padding: 15rem 30rem;
+              a{
+                font-size: 20rem;
+              }
+            }
+          }
+          &:last-of-type{
+            font-size: 15rem;
+          }
+        }
+      }
+    }
+    .bt_box{
+      height: 40%;
+      .num3_ani{
+          font-size: 85rem;
+      }
+      span{
+          font-size: 30em;
+      }
+    }
+  }
+  .section_6{
+    .sec6_li{
+      li{
+          width: 250rem; 
+          height: 250rem;
+      }
+    }
+
+  }
+
 }
 @media (max-width:1499px) and (min-width:1281px){
   html {
     font-size: 0.076923076923077vw;
+    // font-size: 0.07806401249024vw;
   } 
+  .section_2{
+    .title_icon{
+      margin-top: -50rem;
+    }
+  }
+  
+  .section_3{
+    .sec_3{
+        .tp_box{
+          height: 60%;
+          .title{
+            li{
+              &:nth-of-type(2){
+                button{
+                  padding: 10rem 20rem;
+                  a{
+                    font-size: 15rem;
+                  }
+                }
+              }
+              &:last-of-type{
+                font-size: 13rem;
+              }
+            }
+          }
+        }
+        .bt_box{
+          height: 40%;
+          .num3_ani{
+              font-size: 80rem;
+          }
+          span{
+              font-size: 25rem;
+          }
+        }
+    }
+
+  }
+
+  .section_4{
+    .title{
+        height: 35%;
+    }
+  }
+
+  .section_6{
+    .sec6_li{
+      max-width: 1200px;
+      li{
+          width: 230rem;
+          height: 230rem;
+      }
+    }
+  }
+
+  @media (max-height:900px){
+
+  }
 }
 @media (max-width:1280px) and (min-width:1000px){
+  @media (max-height:900px){
+
+  }
   html {
     font-size: 0.078125vw;
   } 
+  .title_icon{
+    margin-top: -80rem;
+  }
+  .section_6{
+    .sec6_li{
+      max-width: 1000px;
+      li{
+          // width: 230rem;
+          // height: 230rem;
+          width: 200px;
+          height: 200px;
+      }
+    }
+  }
 }
 
 @media (max-width:999px) and (min-width:700px){
   html {
     font-size: 0.1001001001001vw;
   } 
+  .title_icon{
+    margin-top: -100rem;
+  }
 }
 @media (max-width:699px) and (min-width:300px){
   html {
     font-size: 0.143061516452074vw;
   } 
+  .title_icon{
+    margin-top: -90rem;
+  }
 }
