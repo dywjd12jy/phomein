@@ -1,5 +1,5 @@
 @media (min-width: 1020px) {
-  .media {
+  #media {
     display: none;
   }
   header .header {
@@ -266,6 +266,7 @@
     font-size: 20rem;
     padding: 5rem;
     background-color: black;
+    cursor: pointer;
   }
   header .header .nav .nav_menu {
     display: none;

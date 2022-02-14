@@ -3,7 +3,7 @@
 
 
 @media (min-width:1020px){
-  .media{
+  #media{
     display: none;
   }
   header{
@@ -204,25 +204,11 @@
       }
       .nav{
         position: relative;
-        // background-color: aqua;
         margin-top: 10rem;
         width: 100%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        // .navbar{
-        //   position: absolute;
-        //   z-index: -1;
-        //   background-color: rgba(0,0,0,1);
-        //   top: 50px;
-        //   left: 0;
-        //   width: 100vw;
-        //   height: 100vh;
-        //   p{
-        //     background-color: blueviolet;
-        //     color: burlywood;
-        //   }
-        // }
         li{
           display: flex;
           flex-direction: column;
@@ -230,6 +216,7 @@
             font-size: 20rem;
             padding: 5rem;
             background-color: black;
+            cursor: pointer;
           }
         }
         .nav_menu{
