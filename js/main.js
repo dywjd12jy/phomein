@@ -1,23 +1,5 @@
-// $(document).ready(function(){
-  
-//   // fullpage customization
-//   // $('#fullpage').fullpage({
-//   //   sectionSelector: '.vertical-scrolling',
-//   //   slideSelector: '.horizontal-scrolling',
-//   //   navigation: true,
-//   //   slidesNavigation: true,
-//   //   css3: true,
-//   //   controlArrows: false    
-//   // });
-  
-// });
+ $(function(){
 
-
-  $(function(){
-
-    
-    
-    
     $('#fullpage').fullpage({
       //options here
       autoScrolling:true,
@@ -27,7 +9,6 @@
       anchors: ['section1','section2','section3','section4','section5','section6','section7','section8'],
       showActiveTooltip: true,
       bigSectionsDestination: top,
-
 
       //section2 카운트 number
       onLeave: function( anchorLink, index ){
@@ -59,57 +40,6 @@
           },100);
         }
       }
-      // afterLoad: function( anchorLink, index ){
-      //   if (index == 2) {
-      //     var sec2_Num = document.querySelector('.num_animation');
-      //     var targetnum = sec2_Num.getAttribute('data-rate');
-      //     var aniNum = 0;
-      //     var aniNumPlus = 7841436;
-      //     // var aniStop = 39207180;
-      //     // var aniM = 5050;
-
-      //     var aniTimer = setInterval(function(){
-      //       // if(aniNum <= targetnum){
-      //         aniNum = aniNumPlus+aniNum;
-      //         // sec2_Num.innerText = aniNum;
-      //         sec2_Num.innerText = aniNum.toLocaleString('ko-KR');
-      //         if(aniNum == targetnum){
-      //           clearInterval(aniTimer);
-      //         }
-      //       // }
-      //     },10);
-      //   }
-      // }
-
-
-      // afterLoad: function( anchorLink, index ){
-      //   if (index == 2) {
-      //     var sec2_Num = document.querySelectorAll('.num_animation');
-
-      //     function changeNum(idx){
-
-      //       var aniNum = 0;
-      //       var targetNum = sec2_Num[idx].getAttribute('data-rate');
-
-      //       if(targetNum < 100){
-      //         intervalTime = 0.0000000001;
-      //       }
-
-      //       var aniTimer = setInterval(function(){
-      //         ++aniNum;
-      //         sec2_Num[idx].innerText = aniNum+(',');
-      //         if(aniNum == targetNum){
-      //             clearInterval(aniTimer);
-      //           }
-      //       },intervalTime);
-      //     }
-
-      //     for(var i = 0; i < sec2_Num.length; i++){
-      //       changeNum(i);
-      //     }
-
-      //   }
-      // }
 
     });
 
@@ -126,30 +56,6 @@
       nextArrow: false,
       dots: true,
       appendDots: $('.dots'),
-
-
-      // customPaging: function(slider, i) { 
-        // console.log($(slider.$slides[i]).html());
-        // console.log(slider.$slides[i].data('title'));
-        // console.log($(slider.$slides[i]).data('title'));
-        // return '<button class="tab">' + $(slider.$slides[i]).find('.slide_list').data('title')+$(slider.$slides[i]).find('.slide_list').data('text')+'</button>';
-        
-      // },
-
-
-      //slick_dots
-      // customPaging: function(slider, i) { 
-        
-        // console.log($(slider.$slides[i]).html());
-        // return '<button class="tab">' + $(slider.$slides[i]).find('.sl_dot').attr('data-title') + '</button>';
-        
-        
-        // return '<button class="tab">' + itemList_i.find('.item').attr('data-dot-title') + '</button>';
-        // return '<button class="button">' + $(slider.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
-        // return '<button class="button">' + $(item_list.$slides[i]).find('.item').attr('data-dot-title') + '</button>';
-        // return '<button class="button">' + $(item_list.$slides[i]).find('.item').dataset('data-dot-title') + '</button>';
-        // console.log($(slick_slider.$slides[i]).html());
-        // console.log(data-dot-title)
        
     });
 
@@ -166,27 +72,10 @@
 
     $('.slick-dots li p').addClass('p_style');
 
-
-
-
     var dotIdx = $('.slick-dots>li').index(this);
 
     $('.slick-dots li').click(function(){
       $('.slick-list').addClass('sl_active');
     });
-    
-
-    // var p = document.createElement('p');
-    // var text = document.createElement('text');
-
-    
-
-    // $('.slick-dots li').addClass('plus');
-    // $('plllus').append('.slick-dots li');
-    // console.log($('.plllus'));
-    // console.log($(".plllus").get());
-    // console.log($('.plus'));
-
-    
     
   });

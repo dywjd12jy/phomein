@@ -6,10 +6,26 @@
   #media{
     display: none;
   }
+
+  // ##desktop.nav에 hover slide 효과
+  #desktop.header.active{
+    background-color: rgba(0,0,0,0.9);
+    .navbar{
+      height: 260%;
+      padding: 60rem 0 0 0;
+      opacity: 1;
+    }
+    .nav_menu{
+      padding: 20rem 0;
+      opacity: 1;
+      top: 100%;
+    }
+  }
+
   header{
     .header{
       position: relative;
-
+      
         .navbar{
             position: absolute;
             z-index: -1;
@@ -70,11 +86,26 @@
   
 }
 @media (max-width:1019px) and (min-width:0px){
-  .media{
-    display: block;
-  }
   #desktop{
     display: none;
+  }
+  // ##media.nav에 hover slide 효과
+  #media.header.active{
+    .ham{
+      .h_bar1{transform: rotate(45deg);
+              margin-bottom: -8rem;}
+      
+      .h_bar2{transform: rotate(45deg);}
+      .h_bar3{transform: rotate(135deg);
+              margin-top: -8rem;}
+    }
+    #nav{
+      right: 0;
+    }
+
+  }
+  #media{
+    display: block;
   }
   header{
     .header{
@@ -141,6 +172,7 @@
               cursor: pointer;
               
               span{
+                transition: all ease-in-out 0.5s;
                 display: flex;
                 justify-content: center;
                 content: "";
@@ -153,32 +185,18 @@
               }
             }
           }
-          .ham.active{
-            span{
-              transition: all ease-in-out 0.3s;
-            }
-            .h_bar1{transform: rotate(45deg);
-                    margin-bottom: -8rem;}
-            
-            .h_bar2{transform: rotate(45deg);}
-            .h_bar3{transform: rotate(135deg);
-                    margin-top: -8rem;}
-          }
         }
       }
       #nav{
+        transition: right ease-in-out 0.5s;
         // display: none;
         position: absolute;
         top: 0;
-        right: 0;
-        // right: -30vw;
+        // right: 0;
+        right: -30vw;
         width: 30vw;
         height: 100vh;
         background-color: rgba(0, 0, 0,0.7);
-      }
-      #nav.active{
-        transition: all ease-in-out 0.5s;
-        // right: 0;
       }
       .input{
         width: 100%;
