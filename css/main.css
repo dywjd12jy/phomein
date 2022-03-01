@@ -2109,11 +2109,11 @@ footer .container .foot_bt .ft_bt_right ul li img {
 }
 
 .section_2 {
-  background-image: url("./img/sec_2.jpg");
+  background-image: url("/img/sec_2.jpg");
 }
 
 .section_3 {
-  background-image: url("./img/sec_3.jpg");
+  background-image: url("/img/sec_3.jpg");
 }
 
 .section_4 {
@@ -2125,10 +2125,10 @@ footer .container .foot_bt .ft_bt_right ul li img {
 }
 
 .section_6 {
-  background-image: url("./img/sec_6_back.jpg");
+  background-image: url("../img/sec_6_back.jpg");
 }
 
 .section_7 {
-  background-image: url("./img/sec_7_top.jpg");
+  background-image: url("../img/sec_7_top.jpg");
 }
 /*# sourceMappingURL=main.css.map */
