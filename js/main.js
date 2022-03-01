@@ -9,6 +9,7 @@
       anchors: ['section1','section2','section3','section4','section5','section6','section7','section8'],
       showActiveTooltip: true,
       bigSectionsDestination: top,
+      recordHistory: false,
 
       //section2 카운트 number
       onLeave: function( anchorLink, index ){
