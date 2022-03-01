@@ -286,7 +286,7 @@
 
 
 
-//1500px 이상
+// 넓이 1500px 이상
 @media (min-width: 1500px){
   html {
     font-size: 6.25%;
@@ -395,7 +395,7 @@
     }
   }
 }
-//1499px 이하
+// 넓이 1499px 이하
 @media (max-width: 1499px){
   #mobile_none{display: block;}
 
@@ -546,7 +546,7 @@
     }
   }
 }
-//1281px 이상
+// 넓이 1281px 이상
 @media (min-width: 1281px){
   .franchise_box,.ranchise_p{display: flex;}
   #nono{
@@ -556,17 +556,20 @@
     display: none;
   }
 
-  .cont_bt{
-    &>li{
-        width: 40%;
-        &>div{
-          align-items: flex-start;
-        }
-    }
-    .bt_1{
-      width: 90%;
+  .section_7{
+    .cont_bt{
+      &>li{
+          width: 40%;
+          &>div{
+            align-items: flex-start;
+          }
+      }
+      .bt_1{
+        width: 90%;
+      }
     }
   }
+  
 
   footer{
     .ft_tp_bar{
@@ -634,7 +637,7 @@
 
 
 }
-//1280px 이하
+// 넓이 1280px 이하
 @media (max-width: 1280px){
   .franchise_box ul,.franchise_p{display: none;}
   #none{
@@ -644,18 +647,16 @@
     .cont_bt{
       &>li{
           width: 40%;
-          &>div{
-          }
       }
       .bt_1{
         width: 100%;
       }
       .bt_2{
         a{
-            display: flex;
-            #desk_none{
-              font-size: 35rem;
-            }
+          display: flex;
+          #desk_none{
+            font-size: 35rem;
+          }
         }
       }
     }
@@ -693,7 +694,7 @@
 
 
 
-  // @media (max-width:1280px)and(min-width:990px){
+  // 넓이 1290px ~ 990px{
   @media (min-width:990px){
     .section_7{
       .cont_bt{
@@ -882,7 +883,7 @@
 
 
 
-//990px 이상
+// 넓이 990px 이상
 @media (min-width:990px){
   .section_3{
     .tp_box{
@@ -923,11 +924,7 @@
 }
 
 
-
-
-
-
-//999px 이하  0px 이상
+// 넓이 999px 이하  0px 이상
 @media (max-width:999px) and (min-width:0px){
   html{
     font-size: 0.1vw;
@@ -981,6 +978,26 @@
     }
     
     
+  }
+  .section_7{
+    .cont_bt > li > div > p span {
+      margin-top: 50rem;
+    }
+    .cont_bt{
+      .bt_1{
+        a{
+          line-height: 40rem;
+        }
+      }
+      .bt_2{
+        .bt_r_h5img{
+          width: 150rem;
+        }
+        p{
+          line-height: 40rem;
+        }
+      }
+    }
   }
   @media (max-height: 1400px){
     .section_6{
@@ -1045,7 +1062,18 @@
   }
   @media (max-height: 900px){
     .section_6{
+      .title{
+        height: 25%;
+        .tit_box{
+          font-size: 80rem;
+          h2{
+            font-size: 80rem;
+            line-height: 80rem;
+          }
+        }
+      }
       .img_box{
+        height: 75%;
         .sec6_li{
           max-width: 630rem;
           max-height: 630rem;
@@ -1544,179 +1572,6 @@
   
 
   
-  
-  
-  
-  //   .title{
-  //     height: 20%;
-  //     .tit_ovflow{
-  //       height: 100%;
-  //       margin: 0;
-  //     }
-  //     .tit_box{
-  //       line-height: 65rem;
-  //       height: 90%;
-  //     }
-  //   }
-  
-
-  // @media (max-height: 1020px) and (min-height: 901px){
-  //   #sec_6_mb{display: flex;}
-  //   .section_6{
-  //     .sec6_li{
-  //       max-width: 800rem;
-  //       li{
-  //           width: 200rem;
-  //           height: 200rem;
-  //       }
-  //     }
-  //   }
-  //   @media (max-width: 600px){
-  //     #sec_6_mb{display: flex;}
-  //     .section_6{
-  //       .title{ height: 25%;}
-  //       .img_box{ height: 70%;}
-  //       .sec6_li{
-  //         max-width: 600rem;
-  //         li{
-  //           width: 180rem;
-  //           height: 180rem;
-  //         }
-  //       }
-  //     }
-  //   }
-  //   @media (max-width: 500px){
-  //     #sec_6_mb{display: flex;}
-  //     .section_6{
-  //       .title{ height: 20%;}
-  //       .img_box{ height: 80%;}
-  //       .sec6_li{
-  //         max-width: 1200rem;
-  //         li{
-  //           width: 210rem;
-  //           height: 210rem;
-  //         }
-  //         #sec_6_mb{display: none;}
-  //       }
-  //     }
-  //   }
-  // }
-
-  @media (max-height: 900px) and (min-height: 801px){
-  //   #sec_6_mb{display: flex;}
-  //   .section_6{
-  //     .sec6_li{
-  //       background-color: #999;
-  //       max-width: 1000rem;
-  //       li{
-  //         width: 200rem;
-  //         height: 200rem;
-  //       }
-  //       #sec_6_mb{display: none;}
-  //     }
-  //   }
-  //   @media (max-width: 800px){
-  //     .section_6{
-  //       .title{ height: 20%;}
-  //       .img_box{ height: 75%;}
-  //       .sec6_li{
-  //         max-width: 600rem;
-  //         li{
-  //           width: 170rem;
-  //           height: 170rem;
-  //         }
-  //         #sec_6_mb{display: block;}
-  //       }
-  //       .sec6_bt_icon{ height: 10%;}
-  //     }
-  //   }
-  //   @media (max-width: 400px){
-  //     #sec_6_mb{display: flex;}
-  //     .section_6{
-  //       .title{ height: 15%;}
-  //       .img_box{ height: 80%;}
-  //       .sec6_li{
-  //         max-width: 600rem;
-  //         height: 80%;
-  //         li{
-  //           width: 180rem;
-  //           height: 180rem;
-  //         }
-  //         #sec_6_mb{display: none;}
-  //       }
-  //       .sec6_bt_icon{ height: 20%;}
-  //     }
-  //   }
-  // }
-  // @media (max-height: 800px){
-
-  //   .section_6{
-    //   .title{
-    //     height: 15%;
-    //     .tit_ovflow{
-    //       height: 100%;
-    //       margin: 0;
-    //     }
-    //     .tit_box{
-    //       font-size: 65rem;
-    //       line-height: 65rem;
-    //       height: 90%;
-    //       h2{font-size: 65rem;}
-    //     }
-    //   }
-    //   .img_box{ height: 80%;}
-    //   .sec6_li{
-    //     max-width: 600rem;
-    //     height: 90%;
-    //     li{
-    //       width: 160rem;
-    //       height: 160rem;
-    //     }
-    //   .sec6_bt_icon{ height: 5%;}
-    //   }
-    // }
-    @media (max-width: 800px){
-      // #sec_6_mb{display: flex;}
-      // .section_6{
-      //   // .title{ height: 20%;}
-      //   // .img_box{ height: 75%;}
-      //   .sec6_li{
-      //     max-width: 600rem;
-      //     height: 90%;
-      //     li{
-      //       width: 160rem;
-      //       height: 160rem;
-      //     }
-      //   .sec6_bt_icon{ height: 10%;}
-      //   }
-      // }
-    }
-    // @media (max-width: 400px){
-    //   #sec_6_mb{display: flex;}
-    //   .section_6{
-    //     .title{ height: 15%;}
-    //     .img_box{ height: 80%;}
-    //     .sec6_li{
-    //       max-width: 600rem;
-    //       height: 80%;
-    //       li{
-    //         width: 160rem;
-    //         height: 160rem;
-    //       }
-    //       #sec_6_mb{display: none;}
-    //     }
-    //     .sec6_bt_icon{ height: 20%;}
-    //   }
-    // }
-  }
-
-
-
-
-
-
-
-
 
 
   @media (max-width: 989px){
