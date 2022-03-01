@@ -395,30 +395,30 @@ header{
             }
         }
         .list_1{
-            background: url(/img/main_1.png); 
+            background: url(../img/main_1.png); 
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         .list_2{
-            background: url(/img/main_2.jpg);
+            background: url(../img/main_2.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
         .list_3{
-            background: url(/img/main_3.jpg);
+            background: url(../img/main_3.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
         .list_4{
-            background: url(/img/main_4.jpg);
+            background: url(../img/main_4.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
         .list_5{
-            background: url(/img/main_5.jpg);
+            background: url(../img/main_5.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -1054,7 +1054,7 @@ header{
                 height: 100%;
             }
             .sns_i a .txt span{
-                background: url(/img/Instagram_bg.png);
+                background: url(../img/Instagram_bg.png);
                 opacity: 80%;
             }
             .sns_n a .txt span{
@@ -1112,18 +1112,18 @@ header{
         }
     }
     .sns_i p::after{
-        background: url(/img/ico_sns_instar.png)no-repeat;
+        background: url(../img/ico_sns_instar.png)no-repeat;
         background-size: cover;
     }
     .sns_n p::after{
-        background: url(/img/ico_sns_naver.png) no-repeat;
+        background: url(../img/ico_sns_naver.png) no-repeat;
         top: 55%;
         left: 60%;
         transform: translate(-55%, -60%);
         background-size: contain;
     }
     .sns_y p::after{
-        background: url(/img/ico_sns_youtube.png)no-repeat;
+        background: url(../img/ico_sns_youtube.png)no-repeat;
         background-size: cover;
     }
 }
@@ -1299,10 +1299,10 @@ header{
             width: 50%;height: 100%;
         }
         .bottom_1{
-            background: url(/img/sec_7_bottom_1.jpg) no-repeat;
+            background: url(../img/sec_7_bottom_1.jpg) no-repeat;
         }
         .bottom_2{
-            background: url(/img/sec_7_bottom_2.jpg) no-repeat;
+            background: url(../img/sec_7_bottom_2.jpg) no-repeat;
         }
     }
     #nono > div > p span{
@@ -1564,22 +1564,22 @@ footer{
 
 
 .section_2{
-    background-image: url("../img/sec_2.jpg");
+    background-image: url("..../img/sec_2.jpg");
 }
 .section_3{
-    background-image: url("../img/sec_3.jpg");
+    background-image: url("..../img/sec_3.jpg");
 }
 .section_4{
-    background-image: url("../img/sec_4.jpg");
+    background-image: url("..../img/sec_4.jpg");
 }
 .section_5{
-    background-image: url("../img/sec_5.jpg");
+    background-image: url("..../img/sec_5.jpg");
 }
 .section_6{
-    background-image: url("../img/sec_6_back.jpg");
+    background-image: url("..../img/sec_6_back.jpg");
 }
 .section_7{
-    background-image: url("../img/sec_7_top.jpg");
+    background-image: url("..../img/sec_7_top.jpg");
 }
 
 
