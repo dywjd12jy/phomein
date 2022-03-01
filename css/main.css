@@ -2109,19 +2109,19 @@ footer .container .foot_bt .ft_bt_right ul li img {
 }
 
 .section_2 {
-  background-image: url("/img/sec_2.jpg");
+  background-image: url("../img/sec_2.jpg");
 }
 
 .section_3 {
-  background-image: url("/img/sec_3.jpg");
+  background-image: url("../img/sec_3.jpg");
 }
 
 .section_4 {
-  background-image: url("./img/sec_4.jpg");
+  background-image: url("../img/sec_4.jpg");
 }
 
 .section_5 {
-  background-image: url("./img/sec_5.jpg");
+  background-image: url("../img/sec_5.jpg");
 }
 
 .section_6 {
