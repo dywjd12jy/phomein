@@ -15,12 +15,12 @@ $(function(){
 
 
     //1018이하 ham 이벤트
-        var Header_MD = $('#media.header')
-        var Ham= $('.ham')
+        var Header_MD = $('#mobile.header')
         var Ham_bar= $('.ham p')
-        var Nav = $('#media #nav')
-        var nav = $('#media .nav p')
-        var navMn = $('#media .nav_menu')
+        var Nav = $('#mobile #nav')
+        // var nav_p = $('#mobile .nav p')
+        var nav_p = $('#mobile .nav p')
+        var navMn = $('#mobile .nav_menu')
         
         //ham 아이콘 클릭
         Ham_bar.on("click", function(){
@@ -28,9 +28,12 @@ $(function(){
         });
 
         //nav 메뉴 상하 슬라이드
-        nav.on("click", function(){
-        navMn.stop().slideUp();
-        $(this).siblings("ul").stop().slideToggle();
+        nav_p.on("click", function(){
+            
+        // console.log($(window).width());
+        console.log("클릭");
+            navMn.stop().slideUp();
+            $(this).siblings("ul").stop().slideToggle();
         });
 
 });

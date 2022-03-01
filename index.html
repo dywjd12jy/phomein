@@ -94,7 +94,7 @@
                     </ul>
                 </article>
             </div>
-            <div id="media" class="header">
+            <div id="mobile" class="header">
                 <div class="head_bar">
                     <h1 class="logo"><img src="img/logo.png" alt="header_logo"></h1>
                     <ul>
@@ -276,11 +276,11 @@
                     <ul class="title">
                         <li class="title_num">
                             <p><span class="animate">대한민국 쌀국수의 역사,<br>포메인으로부터.</span></p>
-                            <div class="num2_ani num_1" data-rate="39207180">39,207,180</div>
-                        </li>
-                        <li class="title_icon">
-                            <p>쌀국수 누적 판매량</p>
-                            <p class="num_icon"><img src="/img/sec2_icon.png" alt="쌀국수 아이콘"></p>
+                            <div class="title_icon">
+                                <div class="num2_ani num_1" data-rate="39207180">39,207,180</div>
+                                <p>쌀국수 누적 판매량</p>
+                                <p class="num_icon"><img src="/img/sec2_icon.png" alt="쌀국수 아이콘"></p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -301,12 +301,15 @@
                 </div>
                 <div class="bt_box">
                     <ul>
-                        <li><img src="/img/sec_3_icon.png" alt="section3 가방아이콘"></li>
+                        <li>
+                            <img src="/img/sec_3_icon.png" alt="section3 가방아이콘">
+                            <p class="md_989">SINCE 2006</p>
+                        </li>
                         <li>
                             <p class="num3_ani" data-rate="16"></p>
                             <span>th</span>
                         </li>
-                        <li>SINCE 2006</li>
+                        <li class="md_990">SINCE 2006</li>
                     </ul>
                 </div>
             </div>
@@ -455,11 +458,22 @@
                                 <p>맛있게 매운 해장 음식 추천 #포메인 #포메인레드 #매운쌀국수</p>
                             </div>
                         </a></li>
+                        <li id="sec_6_mb" class="sns_n"><a href="https://blog.naver.com/dk_phomein/222585903453">
+                            <img src="/img/sec_6_instar_8.jpg" alt="">
+                            <span class="icon"><p></p></span>
+                            <div class="txt">
+                                <span></span>
+                                <p>맛있게 매운 해장 음식 추천 #포메인 #포메인레드 #매운쌀국수</p>
+                            </div>
+                        </a></li>
                     </ul>
                     <ul class="sec6_bt_icon">
-                        <li>
+                        <!-- <li>
                             <img src="/img/sec_6_bt_icon.png" alt="SNS bottom에 위치한 icon_png모음">
-                        </li>
+                        </li> -->
+                        <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><img src="/img/ico_sns_naver.png" alt=""></li>
                     </ul>
                 </article>
             </div>
@@ -474,7 +488,7 @@
                                 <span>NEWS</span>
                             </p>
                             <a href="#">
-                                <em>포메인 '햅쌀면',해썹 • ISO 22000 인증완료 •••"쌀국수 업계최초</em>
+                                <em>포메인 '햅쌀면',해썹 • ISO 22000 인증완료 ••• "쌀국수 업계최초</em>
                                 <p>2022.01.10</p>
                             </a>
                         </div>
@@ -496,9 +510,10 @@
                             <a href="#">
                                 <em>포메인 배달 꿀조합을 보여줘!</br>(~1/20)</em>
                             </a>
+                            <a class="mobile_i" href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
                         </div>
                     </li>
-                    <li class="bt_right">
+                    <li id="none" class="bt_right">
                         <div class="bt_2">
                             <p>
                                 <span>FRANCHISE</span>
@@ -508,22 +523,48 @@
                                     <p class="bt_r_h5img"><img src="/img/sec7_franchise.png" alt="section7 가맹문의 로고 이미지"></p>
                                     <p>가맹 문의</p>
                                 </h5>
-                                <div>
+                                <div class="franchise_box">
                                     <span>전화 가맹 문의</span>
                                     <ul>
                                         <li><p>대표번호 : 1899-****(연결1), 직통 번호 : 031-780-****</p></li>
                                         <li><p>* 전화 상담 가능 시간 : 평일 8:50AM~18:00PM(점심시간 11:50AM~13:00PM)</p></li>
                                     </ul>
                                 </div>
-                                <div>
+                                <div class="franchise_box">
                                     <span>온라인 가맹 문의</span>
                                     <ul>
                                         <li><p>기업 사이트 > 가맹 개설정보 > 가맹상담 신청 게시판 접수</p></li>
                                         <li><p>* 온라인 가맹 문의는 365일 상시 가능합니다.</p></li>
                                     </ul>
                                 </div>
-                                <p>*접수된 문의는 담당자 배정 후 상담이 진행됩니다.*어떤문의든 신속하고 친절한 상담을 약속드립니다.</p>
+                                <p id="desk_none">바로 가기</p>
+                                <p class="franchise_p">*접수된 문의는 담당자 배정 후 상담이 진행됩니다.*어떤문의든 신속하고 친절한 상담을 약속드립니다.</p>
                             </a>
+                        </div>
+                    </li>
+                    <li id="nono" class="bt_right">
+                        <div class="bt_2">
+                            <p>
+                                <span>FRANCHISE</span>
+                            </p>
+                            <div class="box">
+                                <h5>
+                                    <p class="bt_r_h5img"><img src="/img/sec7_franchise.png" alt="section7 가맹문의 로고 이미지"></p>
+                                    <p>가맹 문의</p>
+                                </h5>
+                                <div>
+                                    <ul class="mobile_989_none">
+                                        <li>온라인 가맹 문의</li>
+                                        <li>전화 가맹 문의</li>
+                                    </ul>
+                                    <p>
+                                        <span>바로</span>
+                                        <span>가기</span>
+                                    </p>
+                                    <a href="#"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+                                </div>
+                                <p id="none" class="franchise_p">*접수된 문의는 담당자 배정 후 상담이 진행됩니다.*어떤문의든 신속하고 친절한 상담을 약속드립니다.</p>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -570,9 +611,6 @@
                             <li><a href="#"><img src="/img/foot_icon_kakaogift.png" alt="footer 카카오톡_선물하기 아이콘"></a></li>
                         </ul>
                     </div>
-                    <ul>
-                        
-                    </ul>
                     <ul></ul>
                 </div>
             </div>
