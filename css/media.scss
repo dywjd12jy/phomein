@@ -1569,6 +1569,7 @@
 
         // 넓이 700px 이하
         @media (max-width: 700px){
+
           .section_6{
             .title{
               height: 25%;
@@ -1850,6 +1851,10 @@
                       flex-wrap: wrap;
                       justify-content: center;
                       align-items: center;
+                      li{
+                        display: flex;
+                        flex-wrap: wrap;
+                      }
                     }
                     ul li p{font-size: 15rem;}
                     p{font-size: 18rem;}
