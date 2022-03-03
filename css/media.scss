@@ -1704,7 +1704,8 @@
           
           // 넓이 600px 이하
           @media (max-width: 600px){
-            #fp-nav{display: none;}
+            #fp-nav.right{ right: -10rem;}
+            #fp-nav ul li .fp-tooltip.right{ display: none;}
             header .header .head_bar ul .hd_r a{
               margin-right: 25rem;
             }

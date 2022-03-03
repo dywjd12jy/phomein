@@ -1651,7 +1651,10 @@
 }
 
 @media (max-width: 999px) and (min-width: 0px) and (max-width: 989px) and (max-width: 900px) and (max-width: 800px) and (max-width: 700px) and (max-width: 600px) {
-  #fp-nav {
+  #fp-nav.right {
+    right: -10rem;
+  }
+  #fp-nav ul li .fp-tooltip.right {
     display: none;
   }
   header .header .head_bar ul .hd_r a {
