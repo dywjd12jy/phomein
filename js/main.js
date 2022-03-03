@@ -2,8 +2,8 @@
 
     $('#fullpage').fullpage({
       //options here
-      // autoScrolling:true,
-      // scrollHorizontally: true,
+      autoScrolling:true,
+      scrollHorizontally: true,
       navigation: true, 
       navigationTooltips: ['홈','브랜드','메뉴','서비스','사회공헌','SNS','커뮤니티','footer'],
       anchors: ['section1','section2','section3','section4','section5','section6','section7','section8'],
@@ -78,5 +78,40 @@
     $('.slick-dots li').click(function(){
       $('.slick-list').addClass('sl_active');
     });
+
+
+    //1019이상 nav 호버시 슬라이드 이벤트
+    var Header_DT = $('#desktop.header')
+    var Nav = $('#desktop nav')
     
-  });
+    Nav.on("mouseover",function(){
+        Header_DT.addClass('active');
+    }); 
+    Nav.on("mouseout",function(){
+        Header_DT.removeClass('active');
+    });
+
+
+  //1018이하 ham 이벤트
+    var Header_MD = $('#mobile.header')
+    var Ham_bar= $('.ham p')
+    var Nav = $('#mobile #nav')
+    // var nav_p = $('#mobile .nav p')
+    var nav_p = $('#mobile .nav p')
+    var navMn = $('#mobile .nav_menu')
+    
+    //ham 아이콘 클릭
+    Ham_bar.on("click", function(){
+        Header_MD.toggleClass('active')
+    });
+
+    //nav 메뉴 상하 슬라이드
+    nav_p.on("click", function(){
+        
+    // console.log($(window).width());
+    console.log("클릭");
+        navMn.stop().slideUp();
+        $(this).siblings("ul").stop().slideToggle();
+    });
+    
+});
