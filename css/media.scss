@@ -32,9 +32,10 @@
       display: block;
       width: 100%;
       height: 100%;
-      backdrop-filter: blur(8px);
+      backdrop-filter: blur(5px);
       transition: blur 0s;
       z-index: -1;
+      border-bottom: solid 1px rgba(153, 153, 153, 0.5);
       background-color: rgba(255,255,255,0);
     }
     .container{
@@ -161,10 +162,10 @@
         display: block;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(8px);
+        backdrop-filter: blur(5px);
         transition: blur 0s;
         z-index: -1;
-        background-color: rgba(255,255,255,0);
+        background-color: rgba(0,0,0,0.6);
       }
       .head_bar{
         display: flex;
@@ -173,6 +174,7 @@
         width: 100%;
         height: 75rem;
         .logo{
+          margin-left: 5rem;
           width: 130rem;
           padding: 5rem;
         }
@@ -182,7 +184,6 @@
           align-items: center;
           width: 40%;
           height: 100%;
-          // background-color: rgb(155, 222, 135);
           li{
             display: flex;
             align-items: center;
@@ -246,11 +247,9 @@
       }
       #nav{
         transition: right ease-in-out 0.5s;
-        // display: none;
         position: absolute;
         top: 0;
-        // right: 0;
-        right: -30vw;
+        right: -100vw;
         width: 30vw;
         height: 100vh;
         background-color: rgba(0, 0, 0,0.7);
@@ -259,7 +258,6 @@
         width: 100%;
         margin-top: 75rem;
         display: block;
-        // background-color: antiquewhite;
         li{
           height: 100%;
           padding: 0 10rem;
@@ -296,7 +294,6 @@
         }
         .nav_menu{
           display: none;
-          // display: flex;
           flex-direction: column;
           li{
             padding: 10rem;
@@ -306,6 +303,17 @@
               margin-top: 10rem;
             }
           }
+        }
+      }
+    }
+  }
+  .section_1 {
+    .p_style{
+      display: none;
+    }
+    .slick-dots{
+      li{
+        button::before{
         }
       }
     }
@@ -546,26 +554,17 @@
       //   @media (max-width:1499px) and (min-width:1400px){
       @media (min-width:1400px){
         footer{
-          .container{
-            .foot_tp{
-              ul{
-              display: flex;
-                li{
-                    color: #333;
-                    font-size: 15rem;
-                }
-              }
-            }
-          }
-        }
-      }
-      
-      footer{
-        .container{
           .foot_tp{
-            ul:first-of-type{
+            ul{
+            display: flex;
+            &:first-of-type{
               li{
                   padding-right: 15rem;
+              }
+            }
+              li{
+                  color: #333;
+                  font-size: 15rem;
               }
             }
           }
@@ -688,6 +687,12 @@
         }
       }
     }
+    .mobile_989_none{
+      li{
+        padding: 10rem;
+        text-align: center;
+      }
+    }
   }
   footer{
     .ft_tp_bar{
@@ -695,22 +700,18 @@
     }
     .container{
       max-width: 1100px;
-    
-      .foot_tp{
-        height: 100rem;
-        padding-left: 30rem;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        ul{
-          width: 100%;
-          padding: 5rem 0;
-        }
-      }
-      .foot_bt{
-        padding: 40rem 0 70rem 30rem;
+    }
+    .foot_tp{
+      height: 100rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      ul{
+        width: 100%;
+        padding: 5rem 0;
       }
     }
+    
   }
   @media (max-height:900px){
     .section_4{
@@ -912,6 +913,9 @@
 
 
 // 넓이 990px 이상
+@media (min-width:801px){
+  .mb_801_no{display: none;}
+}
 @media (min-width:990px){
   .section_3{
     .tp_box{
@@ -956,6 +960,22 @@
 @media (max-width:999px) and (min-width:0px){
   html{
     font-size: 0.1vw;
+  }
+  .section_1{
+    .main_slider{
+      .tit{
+        position: inherit;
+        overflow: visible;
+        .tit_box{
+          position: inherit;
+        }
+        .mb_801_no{
+          p{
+            line-height: 90rem;
+          }
+        }
+      }
+    }
   }
   .section_6{
     .container{
@@ -1025,6 +1045,59 @@
           line-height: 40rem;
         }
       }
+    }
+  }
+  footer{
+    background-color:#232323;
+    .ft_tp_bar{display: none;}
+    .foot_tp{
+      height: 30%;
+      margin-top: 30rem;
+      .mb_999_no{display: none;}
+      ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+          color: rgb(168, 167, 167);
+        }
+        &:nth-of-type(3){
+          li::after{
+            content: "ㅣ";
+            color:rgb(99, 99, 99);
+          }
+          li:last-child::after{
+            content: none;
+          }
+        }
+      }
+    }
+    .foot_bt{
+      padding: 20rem 0;
+      margin-bottom: 40rem;
+      justify-content: center;
+      .ft_bt_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        ul{
+          li{
+            justify-content: center;
+            align-items: center;
+            p{
+              display: flex;
+              color:rgb(99, 99, 99);
+              margin-bottom: 5rem;
+            }
+          }
+        }
+        &>p{
+          padding-top: 10rem;
+        }
+      }
+      .mb_999_no{display: none;}
     }
   }
   @media (max-height: 1400px){
@@ -1201,6 +1274,9 @@
     // width: 800px ~
   @media (max-width: 800px){
 
+    .section_1{
+      .mb_800_no{display: none;}
+    }
     .section_6{
       .img_box{
         .sec6_li{
@@ -1419,7 +1495,42 @@
       // width: 600px ~
       @media (max-width: 600px){
         #fp-nav{display: none;}
-  
+        header .header .head_bar ul .hd_r a{
+          margin-right: 25rem;
+        }
+        .section_1{
+          .mb_800_no{display: none;}
+          .list_2{
+            .main ul{
+              height: 75%;
+            }
+            .tit{
+              height: 40%;
+              .tit_box{
+                margin-bottom: 0;
+                padding-bottom: 0;
+              }
+            }
+            .li_bt{
+              padding-top: 20rem;
+              .span_tp{
+                em{
+                  p{
+                    margin-right: 15rem;
+                  }
+                  p::after{
+                    content: none;
+                  }
+                  &:last-of-type{
+                    p:last-of-type{
+                      margin: 0;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
         .section_6{
           .title{
             height: 30%;
@@ -1567,6 +1678,21 @@
                 }
               }
             }
+            footer{
+              .foot_bt{
+                .ft_bt_left{
+                  ul{
+                    li:first-of-type{
+                      display: flex;
+                      flex-direction: column;
+                      p::after{
+                        content: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
             @media (max-height: 600px){
               .section_6{
                 #sec_6_mb{display: flex;}
@@ -1693,6 +1819,24 @@
     html{
       font-size: 0.111111111111111vw;
     }
+
+    .section_2{
+      .label{
+        li{
+          height: 50rem;
+          font-size: 18rem;
+        }
+      }
+      .title_num{
+        .num2_ani{
+          line-height: 75rem;
+          font-size: 80rem;
+        }
+        .animate{
+          font-size: 35rem;
+        }
+      }
+    }
   }
   @media (max-width: 800px){
     html{
@@ -1733,13 +1877,15 @@
       }
       .title_num{
           .animate{
+            font-size: 35rem;
             left: 0;
             opacity: 1;
             margin-left: 0;
           }
       }
       .num_icon{
-        margin-top: 20rem;
+        margin-top: 10rem;
+        width: 40rem;
       }
       .sec2_text{
         .title_num{
@@ -1761,12 +1907,26 @@
     html{
       font-size: 0.166666666666667vw;
     }
+
+    .section_5{
+      .title{
+        .tit_box{
+          span{
+            font-size: 60rem;
+          }
+          em{
+            font-size: 50rem;
+          }
+        }
+      }
+    }
   }
   
   @media (max-width: 400px){
     html{
       font-size: 0.25vw;
     }
+
     @media (max-height: 1020px){
       html{
         font-size: 0.2vw;
