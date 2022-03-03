@@ -249,13 +249,13 @@
         position: absolute;
         top: 0;
         right: -100vw;
-        width: 30vw;
+        width: 60vw;
         height: 100vh;
         background-color: rgba(0, 0, 0,0.7);
       }
       .input{
         width: 100%;
-        margin-top: 75rem;
+        margin: 75rem 0 30rem 0;
         display: block;
         li{
           height: 100%;
@@ -266,6 +266,7 @@
           input{
             width: 80%;
             margin-left: 10rem;
+            padding: 5rem;
           }
           i{
             width: 10%;
@@ -286,7 +287,7 @@
           flex-direction: column;
           p{
             font-size: 20rem;
-            padding: 5rem;
+            padding: 10rem;
             background-color: black;
             cursor: pointer;
           }
@@ -301,6 +302,9 @@
             &:first-of-type{
               margin-top: 10rem;
             }
+            &:last-of-type{
+              margin-bottom: 10rem;
+            }
           }
         }
       }
@@ -310,6 +314,9 @@
     .p_style{
       display: none;
     }
+  }
+  .section_4 {
+    .icon_box > li .text li a{opacity: 1;}
   }
   .section_6{
     .img_box .sec6_li{
@@ -647,14 +654,21 @@
         .list_2{
           .li_tp{ height: 15%;}
           .tit{
-            height: 45%;
+            height: 65%;  
             .tit_box{
+              height: 95%;
               padding-bottom: 0rem;
+              &>p{
+                padding-bottom: 20rem;
+              }
+              span{
+                line-height: 85rem;
+              }
             }
           }
           .li_bt{
             padding-top: 0rem;
-            height: 30%;
+            height: 20%;
           }
         }
       }
@@ -990,6 +1004,9 @@
             line-height: 90rem;
           }
         }
+        .mb_801_no{
+          p{ line-height: 100rem;}
+        }
       }
     }
   }
@@ -1284,8 +1301,6 @@
 
 
   // 넓이 media
-  
-  
   // 넓이 989px 이하
   @media (max-width: 989px){
     .section_3{
@@ -1399,6 +1414,12 @@
         }
         .section_1{
           .mb_800_no{display: none;}
+          .list_1{
+            .li_tp {
+              width: 350rem;
+              img{width: 100%;}
+            }
+          }
         }
         .section_2{
           .animate{
@@ -1551,6 +1572,7 @@
           .section_6{
             .title{
               height: 25%;
+              margin-top: 30rem;
             }
             .img_box{
               height: 75%;
@@ -1561,6 +1583,11 @@
                   width: 200rem;
                   height: 200rem;
                 }  
+              }
+              .sec6_bt_icon li{
+                margin: 0 20rem;
+                i{ font-size: 30rem;}
+                img{ width: 17rem;}
               }
             }
           }
@@ -1711,6 +1738,23 @@
                       }
                     }
                   }
+                  .span_bt{
+                    p{ 
+                      font-size: 15rem;
+                      color: rgb(221, 221, 221);
+                    
+                      &:first-of-type em{
+                          margin-right: 10rem;
+                      }
+                      &:last-of-type{
+                        color: rgba(255, 255, 255,1);
+                        font-weight: bold;
+                        font-size: 18rem;
+                        padding-top: 10rem;
+                      }
+
+                    }
+                  }
                 }
               }
             }
@@ -1797,6 +1841,29 @@
 
             // 넓이 500px 이하
             @media (max-width: 500px){
+              footer{
+                .foot_bt{
+                  .ft_bt_left{
+                    ul li p{font-size: 15rem;}
+                    p{font-size: 18rem;}
+                  }
+                }
+              }
+              
+              @media (max-height: 1000px){
+                .section_1{
+                  .list_2{
+                    .tit{
+                      .tit_box{
+                        &>p{
+                          font-size: 40rem;
+                          padding-bottom: 20rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
               @media (max-height: 900px){
                 .section_6{
                   .title{
@@ -1851,6 +1918,15 @@
 
               // 넓이 400px 이하
               @media (max-width: 400px){  
+                .section_1{
+                  .list_2{
+                    .tit{
+                      .tit_box{
+                        span{font-size: 60rem;}
+                      }
+                    }
+                  }
+                }
                 .section_6{
                   .title{
                     height: 35%;
@@ -1882,6 +1958,42 @@
                     }
                   }
                 }
+                // @media (max-height: 750px){
+                  .section_7{
+                    i{
+                      font-size: 30rem;
+                    }
+                    
+                    .bt_1{
+                      width: 95%;
+                      right: 5%;
+                      a{ font-size: 25rem;}
+                      a:first-of-type{
+                        em{ line-height: 15rem;}
+                      }
+                    }
+                    .bt_2{
+                      width: 95%;
+                      right: 5%;
+                      a{
+                        margin-top: 30rem;
+                      }
+                      p{
+                        font-size: 25rem;
+                        span{
+                          font-size: 25rem;
+                        }
+                      }
+                      .bt_r_h5img{
+                        width: 200rem;
+                        margin-top: 30rem;
+                      }
+                      .mobile_989_none{
+                        display: none;
+                      }
+                    }
+                  }
+                // }
                 @media (max-height: 600px){
                   .section_6{
                     #sec_6_mb{display: flex;}

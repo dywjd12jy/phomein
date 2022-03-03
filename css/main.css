@@ -275,10 +275,8 @@ header article:last-of-type ul li:nth-of-type(2) {
 }
 
 .section_1 .main_slider .tit {
-  position: relative;
   margin-bottom: 5rem;
   width: 100%;
-  overflow: hidden;
 }
 
 .section_1 .main_slider .tit .tit_box {
@@ -295,7 +293,6 @@ header article:last-of-type ul li:nth-of-type(2) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   width: 100%;
   top: 0;
   font-size: 30rem;
@@ -346,6 +343,10 @@ header article:last-of-type ul li:nth-of-type(2) {
 
 .section_1 .list_2 .li_tp {
   height: 17%;
+}
+
+.section_1 .list_2 .li_tp::before {
+  height: 60%;
 }
 
 .section_1 .list_2 .tit {
@@ -502,8 +503,8 @@ header article:last-of-type ul li:nth-of-type(2) {
 }
 
 .section_1 .list_3 .main_tit .tit span, .section_1 .list_4 .main_tit .tit span, .section_1 .list_5 .main_tit .tit span {
-  font-size: 55rem;
-  line-height: 100rem;
+  font-size: 65rem;
+  line-height: 90rem;
 }
 
 .section_1 .list_3 .main_tit .li_bt, .section_1 .list_4 .main_tit .li_bt, .section_1 .list_5 .main_tit .li_bt {
@@ -512,7 +513,24 @@ header article:last-of-type ul li:nth-of-type(2) {
 }
 
 .section_1 .list_3 .main_tit .li_bt p, .section_1 .list_4 .main_tit .li_bt p, .section_1 .list_5 .main_tit .li_bt p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 28rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+}
+
+.section_1 .list_3 .main_tit .li_bt p em:first-of-type, .section_1 .list_4 .main_tit .li_bt p em:first-of-type, .section_1 .list_5 .main_tit .li_bt p em:first-of-type {
+  margin-right: 10rem;
 }
 
 .section_1 .list_1 {
@@ -1070,6 +1088,7 @@ header article:last-of-type ul li:nth-of-type(2) {
 
 .section_4 .icon_box > li .text li a {
   position: absolute;
+  width: 100%;
   height: 90%;
   left: 50%;
   bottom: 0%;
