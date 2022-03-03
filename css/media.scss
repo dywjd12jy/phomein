@@ -1844,6 +1844,12 @@
               footer{
                 .foot_bt{
                   .ft_bt_left{
+                    ul{
+                      display: flex;
+                      flex-wrap: wrap;
+                      justify-content: center;
+                      align-items: center;
+                    }
                     ul li p{font-size: 15rem;}
                     p{font-size: 18rem;}
                   }

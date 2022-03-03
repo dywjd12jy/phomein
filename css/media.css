@@ -1775,6 +1775,19 @@
 }
 
 @media (max-width: 999px) and (min-width: 0px) and (max-width: 989px) and (max-width: 900px) and (max-width: 800px) and (max-width: 700px) and (max-width: 600px) and (max-width: 500px) {
+  footer .foot_bt .ft_bt_left ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   footer .foot_bt .ft_bt_left ul li p {
     font-size: 15rem;
   }
