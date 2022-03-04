@@ -565,30 +565,6 @@
         }
       }
     }
-  
-    // 넓이 1499px ~ 1321px
-    @media (min-width:1321px){
-
-      // 넓이 1499px ~ 1400px
-      @media (min-width:1400px){
-        footer{
-          .foot_tp{
-            ul{
-            display: flex;
-              &:first-of-type{
-                li{
-                    padding-right: 15rem;
-                }
-              }
-              li{
-                  color: #333;
-                  font-size: 15rem;
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 // 넓이 1281px 이상
@@ -626,14 +602,18 @@
       justify-content: flex-start;
       align-items: center;
       ul{
+        display: flex;
         &:first-of-type{
           width: 50%;
           li{
-            padding-right: 20rem;
+            padding-right: 15rem;
           }
         }
         &:nth-of-type(2){
           width: 50%;
+        }
+        li{
+          font-size: 15rem;
         }
       }
     }

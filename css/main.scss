@@ -1247,6 +1247,17 @@ header{
             
             &>.franchise_p{font-size: 13rem;}
         }
+        .franchise_box{
+            margin-bottom: 5rem;
+            span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 75rem;
+                margin-right: 10rem;
+                background-color: #333;
+            }
+        }
     }
 
     .cont_bt_img{

@@ -587,21 +587,6 @@
   }
 }
 
-@media (max-width: 1499px) and (min-width: 1281px) and (min-width: 1321px) and (min-width: 1400px) {
-  footer .foot_tp ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  footer .foot_tp ul:first-of-type li {
-    padding-right: 15rem;
-  }
-  footer .foot_tp ul li {
-    color: #333;
-    font-size: 15rem;
-  }
-}
-
 @media (min-width: 1281px) {
   .franchise_box, .ranchise_p {
     display: -webkit-box;
@@ -640,14 +625,22 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  footer .foot_tp ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   footer .foot_tp ul:first-of-type {
     width: 50%;
   }
   footer .foot_tp ul:first-of-type li {
-    padding-right: 20rem;
+    padding-right: 15rem;
   }
   footer .foot_tp ul:nth-of-type(2) {
     width: 50%;
+  }
+  footer .foot_tp ul li {
+    font-size: 15rem;
   }
 }
 
